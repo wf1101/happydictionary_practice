@@ -1,0 +1,38 @@
+<!--pages/search/search.wxml-->
+<view class="content">
+  <view class="search">
+    <input class="search-input" placeholder=" 请输入你想查找的单词" auto-focus>
+    </input>
+    <button class="search-button" size="mini">搜索</button>
+  </view>
+  <image class="post" src="../image/poster/post.jpg"></image>
+  <view class="menu">
+    <view class="menu-item">
+      <image class="menu-img" src="../image/menu/listen.png"></image>
+      <view>听力</view>
+    </view>
+    <view class="menu-item">
+      <image class="menu-img" src="../image/menu/read.png"></image>
+      <view>阅读</view>
+    </view>
+    <view class="menu-item">
+      <image class="menu-img" src="../image/menu/write.png"></image>
+      <view>写作</view>
+    </view>
+    <view class="menu-item">
+      <image class="menu-img" src="../image/menu/code.png"></image>
+      <view>编程</view>
+    </view>
+  </view>
+
+  <view class="hr"></view>
+
+  <view class="listhead">
+    <view>列表信息栏</view>
+    <view class="moresign">></view>
+  </view>
+  <import src="../template/template.wxml"/>
+  <view>
+    <template is="searchlist" data="{{array}}" />
+  </view>
+</view>
